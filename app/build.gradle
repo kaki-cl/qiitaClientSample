@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
+// todo commit & push
 android {
     compileSdkVersion 26
     defaultConfig {
