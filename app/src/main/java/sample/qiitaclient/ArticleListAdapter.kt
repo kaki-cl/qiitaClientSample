@@ -13,6 +13,7 @@ import sample.qiitaclient.view.ArticleView
 class ArticleListAdapter(private val context: Context) : BaseAdapter() {
 
     /**
+     * todo
      * エルビス演算子
      * 拡張関数apply
      */
