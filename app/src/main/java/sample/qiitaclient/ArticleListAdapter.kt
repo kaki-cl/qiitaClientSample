@@ -10,13 +10,12 @@ import sample.qiitaclient.view.ArticleView
  * Created by kakehi on 2018/02/17.
  */
 
+/**
+ * todo
+ * エルビス演算子
+ * 拡張関数apply
+ */
 class ArticleListAdapter(private val context: Context) : BaseAdapter() {
-
-    /**
-     * todo
-     * エルビス演算子
-     * 拡張関数apply
-     */
 
     var articles: List<Article> = emptyList()
 
@@ -32,4 +31,6 @@ class ArticleListAdapter(private val context: Context) : BaseAdapter() {
             ((convertView as? ArticleView) ?: ArticleView(context)).apply {
                 setArticle(articles[position])
             }
+    //ArticleView.apply {setArticle} を行うことでViewを実装したArticleViewオブジェクトを返す。
+    //applyを使うことで一時的な変数を導入せずに済む。メンバアクセスを短くできる。
 }
